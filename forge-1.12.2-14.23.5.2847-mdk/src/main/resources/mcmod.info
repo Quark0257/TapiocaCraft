@@ -1,0 +1,16 @@
+[
+{
+  "modid": "tapioca",
+  "name": "Tapioca Craft",
+  "description": "Add tapioca.",
+  "version": "1.0.14",
+  "mcversion": "1.12.2",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Quark0257"],
+  "credits": "Tapioca, tapioca, tapioca!",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

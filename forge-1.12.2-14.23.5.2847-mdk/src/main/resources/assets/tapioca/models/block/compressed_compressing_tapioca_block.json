@@ -1,0 +1,7 @@
+{
+	"parent": "block/cube_all",
+  	"textures": 
+  	{
+    	"all": "tapioca:blocks/compressed_compressing_tapioca_block"
+  	}
+}

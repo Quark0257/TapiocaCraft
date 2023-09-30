@@ -1,0 +1,9 @@
+build.bat
+
+/.metadata/
+
+/runfiles/
+
+/forge-1.12.2-14.23.5.2847-mdk/*
+
+!/forge-1.12.2-14.23.5.2847-mdk/src/

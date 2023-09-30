@@ -1,0 +1,6 @@
+{
+    "parent": "block/crop",
+    "textures": {
+        "crop": "tapioca:blocks/crop_cassava_stage_3"
+    }
+}
