@@ -87,7 +87,7 @@ public class TapiocaMod
 {
 	public static final String MOD_ID = "tapioca";
 	public static final String MOD_NAME = "Tapioca Craft";
-	public static final String MOD_VERSION = "1.0.14";
+	public static final String MOD_VERSION = "1.0.15";
 	public static final String ACCEPTED_MINECRAFT_VERSIONS = "[1.12]";
 	
 	public static final CreativeTabs tab = (CreativeTabs)new TapiocaModTab("tapioca");
@@ -316,6 +316,7 @@ public class TapiocaMod
     public static void registerRecipes(RegistryEvent.Register<IRecipe> event)
     {
     	event.getRegistry().register(new ShapedOreRecipe(new ResourceLocation(MOD_ID,"tapioca"),new ItemStack(TapiocaMod.water_soluble_cassava_powder,8),"HHH","HXH","HHH",'X',FluidUtil.getFilledBucket(new FluidStack(FluidRegistry.WATER,1000)),'H',TapiocaMod.cassava_powder).setRegistryName(MOD_ID, "water_soluble_cassava_powder"));
+    	event.getRegistry().register(new ShapedOreRecipe(new ResourceLocation(MOD_ID,"tapioca"),new ItemStack(TapiocaMod.water_soluble_cassava_powder,8),"HHH","HXH","HHH",'X',"listAllwater",'H',TapiocaMod.cassava_powder).setRegistryName(MOD_ID, "water_soluble_cassava_powder_oredic"));
     	event.getRegistry().register(new ShapedOreRecipe(new ResourceLocation(MOD_ID,"tapioca"),new ItemStack(tapioca_milk_tea, 3),"WVZ", "XXX", "YYY", 'V', Items.MILK_BUCKET, 'W', dried_tea_leaves, 'X', "tapioca", 'Y', Items.GLASS_BOTTLE, 'Z', Items.SUGAR).setRegistryName(MOD_ID, "tapioca_milk_tea"));
     	event.getRegistry().register(new ShapedOreRecipe(new ResourceLocation(MOD_ID,"tapioca"),new ItemStack(tapioca_ice_tea, 3),"WVZ", "XXX", "YYY", 'V', Items.WATER_BUCKET, 'W', dried_tea_leaves, 'X', "tapioca", 'Y', Items.GLASS_BOTTLE, 'Z', Items.SUGAR).setRegistryName(MOD_ID, "tapioca_ice_tea"));
     	event.getRegistry().register(new ShapedOreRecipe(new ResourceLocation(MOD_ID,"tapioca"),new ItemStack(tapioca_block, 1),"XX", "XX", 'X', "tapioca" ).setRegistryName(MOD_ID, "tapioca_block"));
@@ -323,6 +324,7 @@ public class TapiocaMod
     	event.getRegistry().register(new ShapedOreRecipe(new ResourceLocation(MOD_ID,"tapioca"),new ItemStack(compressed_compressing_tapioca_block, 1),"XXX", "XXX", "XXX", 'X', compressed_tapioca_block).setRegistryName(MOD_ID, "compressed_compressing_tapioca_block"));
     	event.getRegistry().register(new ShapedOreRecipe(new ResourceLocation(MOD_ID,"tapioca"),new ItemStack(cassava_block, 1), "XXX", "XXX", "XXX", 'X', "cropCassava").setRegistryName(MOD_ID, "cassava_block"));
     	event.getRegistry().register(new ShapedOreRecipe(new ResourceLocation(MOD_ID,"tapioca"),new ItemStack(tapioca, 8), "XXX", "XYX", "XXX", 'X', tapioca_pearl, 'Y', FluidUtil.getFilledBucket(new FluidStack(FluidRegistry.WATER,1000))).setRegistryName(MOD_ID, "tapioca"));
+    	event.getRegistry().register(new ShapedOreRecipe(new ResourceLocation(MOD_ID,"tapioca"),new ItemStack(tapioca, 8), "XXX", "XYX", "XXX", 'X', tapioca_pearl, 'Y', "listAllwater").setRegistryName(MOD_ID, "tapioca_oredic"));
     	event.getRegistry().register(new ShapedOreRecipe(new ResourceLocation(MOD_ID,"tapioca"),new ItemStack(fermented_cassava, 8),"XXX", "XYX", "XXX", 'X', "cropCassava", 'Y', Blocks.BROWN_MUSHROOM).setRegistryName(MOD_ID, "fermented_cassava0"));
     	event.getRegistry().register(new ShapedOreRecipe(new ResourceLocation(MOD_ID,"tapioca"),new ItemStack(fermented_cassava, 8),"XXX", "XYX", "XXX", 'X', "cropCassava", 'Y', Blocks.RED_MUSHROOM).setRegistryName(MOD_ID, "fermented_cassava1"));
     	event.getRegistry().register(new ShapedOreRecipe(new ResourceLocation(MOD_ID,"tapioca"),new ItemStack(overcompressed_tapioca_block, 1), "XXX", "XXX", "XXX", 'X', compressed_compressing_tapioca_block).setRegistryName(MOD_ID, "overcompressed_tapioca_block"));
